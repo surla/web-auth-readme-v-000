@@ -1280,3 +1280,51 @@ Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8b
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-15 00:51:22 -0500
+
+
+Started GET "/" for ::1 at 2017-09-14 18:14:44 -0700
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 15ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2017-09-14 18:15:04 -0700
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-09-14 18:20:30 -0700
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-09-14 18:23:21 -0700
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=WVRZD0XXWGXNZFFEMBPTZOROUQ5ITF0IJ2Q4WH4DCUNXCNYV&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 14ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=NLFGY0AFPVNDNW5RO2ZJAQD3H21M3CMPFO5R5UU0JCBHFJMZ" for ::1 at 2017-09-14 18:23:28 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"NLFGY0AFPVNDNW5RO2ZJAQD3H21M3CMPFO5R5UU0JCBHFJMZ"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 238ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-09-14 18:23:28 -0700
+Processing by SearchesController#search as HTML
+  Rendered searches/search.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 584ms (Views: 583.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2017-09-14 18:23:38 -0700
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7fdwLc1i+XB3Tqfbds+6EUVO2xrNHEBZZ7/V4Ol7DseQ7TwrlxjROGmkCvq/NPa0er8O+t4MSBKRNhqfhlDZKA==", "zipcode"=>"92117", "commit"=>"Search!"}
+  Rendered searches/search.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 1333ms (Views: 23.8ms | ActiveRecord: 0.0ms)
